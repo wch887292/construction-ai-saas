@@ -25,7 +25,9 @@ jobs:
           cache: npm
 
       - name: 安装依赖
-        run: npm ci
+        # Windows 生成的 lock 会导致跨平台 rollup 原生模块缺失（npm#4828），
+        # 与 FyqyClaw 项目同一经验：lock 不入库，CI 用 npm install。
+        run: npm install --no-audit --no-fund
 
       - name: 类型检查
         run: npm run typecheck

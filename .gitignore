@@ -9,3 +9,4 @@ data/
 .workbuddy/
 # 内部商业文档不入库
 建筑工程AI产品商业计划*.docx
+package-lock.json
