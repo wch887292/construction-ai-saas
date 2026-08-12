@@ -1,0 +1,41 @@
+{
+  "name": "construction-ai-saas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "建筑工程AI - 国内工程行业轻量化合规提效AI SaaS平台（一期MVP）",
+  "scripts": {
+    "dev:client": "vite",
+    "dev:server": "tsx watch server/src/index.ts",
+    "build:client": "vite build",
+    "build:server": "tsc -p tsconfig.json",
+    "build": "npm run build:client && npm run build:server",
+    "start": "node server/dist/index.js",
+    "seed": "tsx server/src/seed.ts",
+    "smoke": "node smoke.mjs",
+    "test:llm": "tsx server/src/llm.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "docx": "^9.7.1",
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  }
+}

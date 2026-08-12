@@ -1,0 +1,7 @@
+# 统一 LF 换行，避免 Windows/CI 行尾差异
+* text=auto eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf

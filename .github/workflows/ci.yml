@@ -1,0 +1,44 @@
+# 建筑工程AI SaaS - 持续集成
+# 每次 push / PR 自动执行：类型检查 -> LLM 链路测试 -> 生产构建 -> 端到端冒烟
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [22]
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 类型检查
+        run: npm run typecheck
+
+      - name: LLM 链路测试（本地 mock OpenAI，无需真实 Key）
+        run: npm run test:llm
+
+      - name: 生产构建
+        run: npm run build
+
+      - name: 种子数据 + 端到端冒烟（Mock 模式，14 项）
+        run: |
+          npm run seed
+          node server/dist/index.js &
+          sleep 3
+          npm run smoke

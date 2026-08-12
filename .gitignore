@@ -1,0 +1,11 @@
+node_modules/
+dist/
+server/dist/
+data/
+*.out
+.env
+.env.*
+!.env.example
+.workbuddy/
+# 内部商业文档不入库
+建筑工程AI产品商业计划*.docx
