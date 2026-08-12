@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: npm
+        # 注意：不使用 cache: npm —— 本仓库 lock 不入库（npm#4828 跨平台问题），cache 依赖 lock 文件会直接报错。
 
       - name: 安装依赖
         # Windows 生成的 lock 会导致跨平台 rollup 原生模块缺失（npm#4828），
