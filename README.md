@@ -12,6 +12,17 @@
 - 负责人：吴赐虹
 
 ---
+---
+
+## 🌐 品牌与官网
+
+本仓库由 **晋江市飞虹智科技企业管理有限公司 · 飞扬企源研发中心** 维护。
+
+- 🏠 **官方网站**：[https://www.klai.top](https://www.klai.top) — 飞虹智 klAI · 泉州制造业 AI 服务商
+- 📦 **开源矩阵**：[https://www.klai.top/opensource.html](https://www.klai.top/opensource.html)
+- 🤖 **AI Agent 入口**：[https://www.klai.top/enterprise.html](https://www.klai.top/enterprise.html)
+
+
 
 ## 产品定位（来自商业计划复盘）
 
