@@ -135,6 +135,25 @@ npm run dev:client   # 终端2：前端 vite (http://localhost:5173，代理 /ap
 | `npm run test:llm` | LLM 链路测试（本地 mock OpenAI，8 场景：JSON 解析/幻觉引用替换/超时/报错等） |
 | `npm run smoke` | 端到端冒烟（14 项：生成→溯源→强制复核→版本留痕，需先 `npm run seed` 并启动服务） |
 
+
+---
+
+## 🤝 社区支持
+
+关注飞虹智 klAI 动态，获取最新开源项目更新与技术教程：
+
+![社区支持二维码](https://github.com/construction-ai-saas/releases/download/v1.0.0-community/qrcode-community.png)
+
+扫码加入 **飞虹智企微小助手**，获取：
+- 技术答疑与部署指导
+- 开源项目更新通知
+- 本地化服务预约（泉州地区）
+- 企业 AI 数字化咨询
+
+---
+
+*晋江市飞虹智科技企业管理有限公司 · 飞扬企源研发中心 · 负责人：吴赐虹*
+
 ## 目录结构
 
 ```
