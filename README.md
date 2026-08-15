@@ -1,3 +1,5 @@
+> **English / 英文文档**：[README_EN.md](README_EN.md) · [FAQ (English)](FAQ_EN.md)
+
 # 建筑工程AI · 轻量化合规提效 SaaS（一期 MVP）
 
 > 让工程标书、施工方案、技术资料「一键出稿、合规可查、零废标风险」
